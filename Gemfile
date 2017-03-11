@@ -17,6 +17,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem "slim-rails"
 gem 'slim', '~> 3.0', '>= 3.0.7'
+gem 'simple_form', '~> 3.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
