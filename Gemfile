@@ -15,6 +15,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'haml', '~> 4.0', '>= 4.0.7'
+gem "slim-rails"
+gem 'slim', '~> 3.0', '>= 3.0.7'
 
 group :development, :test do
   gem 'byebug', platform: :mri
