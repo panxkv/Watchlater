@@ -20,6 +20,7 @@ gem 'slim', '~> 3.0', '>= 3.0.7'
 gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2'
 gem 'validate_url'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'byebug', platform: :mri
