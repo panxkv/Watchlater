@@ -38,6 +38,8 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
     autoprefixer-rails (6.3.6.2)
       execjs
@@ -95,6 +97,7 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
+    public_suffix (2.0.5)
     puma (3.8.1)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -169,6 +172,9 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.1.6)
       execjs (>= 0.3.0, < 3)
+    validate_url (1.0.2)
+      activemodel (>= 3.0.0)
+      addressable
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.4.0)
@@ -204,6 +210,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  validate_url
   web-console (>= 3.3.0)
 
 BUNDLED WITH
