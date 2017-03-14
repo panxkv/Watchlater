@@ -7,9 +7,7 @@ table.table
       th Vote
       th Image url
       th Description
-      th User
     
-
   tbody
     - @movies.each do |movie|
       tr
@@ -17,7 +15,6 @@ table.table
         td = movie.vote
         td = movie.image_url
         td = movie.description
-        td = movie.user_id
         td = link_to 'Show', movie
         td = link_to 'Edit', edit_movie_path(movie)
         td = link_to 'Destroy', movie, data: { confirm: 'Are you sure?' }, method: :delete
