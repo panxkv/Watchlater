@@ -1,12 +1,12 @@
 h1 Listing movies
 
-table.table
+table.table.tabel-striped
   thead
     tr
-      th Title
-      th Vote
-      th Image url
-      th Description
+      th class="col-md-2" Title
+      th class="col-md-1" Vote
+      th class="col-md-1" Image 
+      th class="col-md-6" Description
     
   tbody
     - @movies.each do |movie|
@@ -15,10 +15,6 @@ table.table
         td = movie.vote
         td = image_tag movie.image_url, class: "thumbnail"
         td = movie.description
-        td = link_to 'Show', movie
-        td = link_to 'Edit', edit_movie_path(movie)
-        td = link_to 'Destroy', movie, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New Movie', new_movie_path
+        td = link_to 'Show', movie,  class: "btn btn-default"
+        td = link_to 'Edit', edit_movie_path(movie),  class: "btn btn-default"
+        td = link_to 'Destroy', movie, data: { confirm: 'Are you sure?' }, method: :delete,  class: "btn btn-default"

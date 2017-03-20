@@ -6,13 +6,12 @@ nav.navbar.navbar-default
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to "Watchlater", root_path, class: "navbar-brand"
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    = link_to "Watchlater", root_path, class: "navbar-brand"
     - if current_user
           = form_tag new_movie_path, :method => 'get', class: "navbar-form navbar-left" do
             = text_field_tag :search, params[:movie_url], class: "form-control", placeholder: "Zalukaj link"
             = submit_tag "Scrape", :name => nil, class: "btn btn-default"
-            = link_to "or New Movie", new_movie_path, class: "btn btn-default"
     ul.nav.navbar-nav.navbar-right
       - if current_user
         li= link_to "Settings", edit_user_registration_path
