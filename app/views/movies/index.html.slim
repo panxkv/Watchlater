@@ -13,7 +13,7 @@ table.table
       tr
         td = movie.title
         td = movie.vote
-        td = movie.image_url
+        td = image_tag movie.image_url, class: "thumbnail"
         td = movie.description
         td = link_to 'Show', movie
         td = link_to 'Edit', edit_movie_path(movie)
