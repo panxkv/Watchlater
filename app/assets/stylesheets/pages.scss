@@ -6,5 +6,31 @@
 .thumbnail {
 	width: 60px;
   height: 80px;
+}
 
+h3 {
+ border:0 solid #fff;
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-inputs {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.jumbotron{
+     background-position:200% 100%;
+     padding:200px 0 140px 0;
+     margin-bottom:70px;
 }
